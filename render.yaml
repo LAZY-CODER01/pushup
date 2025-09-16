@@ -2,6 +2,5 @@ services:
   - type: web
     name: pushup-counter-api
     env: python
-    pythonVersion: "3.11"
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    startCommand: "gunicorn api.app:app"
